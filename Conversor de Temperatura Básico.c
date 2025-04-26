@@ -12,19 +12,17 @@ int main(void) {
     printf("---> Bem vindo ao conversor de Temperaturas <---\n\n");
 
     do {
-        printf("Selecione a opção desejada:\n\n");
-        printf("Opção 1 - Celsius -> Fahrenheit\n");
-        printf("Opção 2 - Fahrenheit -> Celsius\n");
-        printf("Opção 3 - Celsius -> Kelvin\n");
-        printf("Opção 4 - Sair\n\n");
+        printf("Selecione a opÃ§Ã£o desejada:\n\n");
+        printf("OpÃ§Ã£o 1 - Celsius -> Fahrenheit\n");
+        printf("OpÃ§Ã£o 2 - Fahrenheit -> Celsius\n");
+        printf("OpÃ§Ã£o 3 - Celsius -> Kelvin\n");
+        printf("OpÃ§Ã£o 4 - Sair\n\n");
 
-
-
-            printf("Digite uma opção: ");
+            printf("Digite uma opÃ§Ã£o: ");
             scanf("%d", &opcao);
 
             if (opcao < 1 || opcao > 4) {
-                printf("\nOpção inválida. Tente novamente!\n\n");
+                printf("\nOpÃ§Ã£o invÃ¡lida. Tente novamente!\n\n");
             }
 
         system("cls");
@@ -36,7 +34,7 @@ int main(void) {
 
             // formula Celsius -> fahrenheit
             tempConv = temp * 1.8 + 32;
-            printf("\nTemperatura Convertida: %.1fºF\n\n", tempConv);
+            printf("\nTemperatura Convertida: %.1fÂºF\n\n", tempConv);
             break;
 
         case 2:
@@ -45,7 +43,7 @@ int main(void) {
 
             // formula Fahrenheit -> Celsius
             tempConv = (temp - 32) / 1.8;
-            printf("\nTemperatura Convertida: %.1fºC\n\n", tempConv);
+            printf("\nTemperatura Convertida: %.1fÂºC\n\n", tempConv);
             break;
 
         case 3:
